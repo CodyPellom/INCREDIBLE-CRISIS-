@@ -1,3 +1,5 @@
+let timer_ = document.getElementById('timer_');
+
 /**Simple Timer Logic Start */
 /** */
 /** */
@@ -19,24 +21,19 @@ function startTimer(duration, display) {
      
     }, 1000);
 }
-/** */
-/** */
-/**Simple Timer Logic Ends */
-window.onload = function () {
-    let oneSecond = 1;
-    let thirtySeconds = 30;
-    let oneMinute = 60;
-    let fiveMinutes = 60 * 5,
-         display = document.querySelector('#timer_');
-       
-         startTimer(thirtySeconds, display);
-                 
-};
+
     
 var counter = 0; 
 var arrCounter = [];
 
 spaceCounter = (counter) => {
+    let display = document.querySelector('#timer_');
+
+    startTimer(30, display);
+    if (startTimer == 25){ //Need to figure this out
+        alert('25');
+    }
+    
     document.body.onkeypress = function(e){
         if (e.keyCode == 32){
             counter ++;
