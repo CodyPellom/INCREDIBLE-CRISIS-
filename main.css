@@ -1,10 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Spicy+Rice&display=swap');
 /*Globals*/
 h1,h2,h3,h4,h5,h6,p,a,ul,li,span {
     color: white; 
-    
+    text-align: center;
+
 }
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.spicy {
+    font-family: 'Spicy Rice';
+    font-size: 2.5vw;
+}
+.fredoka {
+    font-family: 'Fredoka One';
+    font-size: 5vw;
+}
+.key_counter_dom {
+    font-family: 'Fredoka One';
+}
+
 /*Globals End*/
 
 body{ 
     background-color: black;
 }
+
+/*Game Timer Countdown Section Start*/
+.round_start_countdown_section {
+
+}
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+    margin-left: -10%;
+  }
+  .ml4 .letters {
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }
+/*Game Timer Countdown Section End*/
+/****/
+/*Round Timer Area Start*/
+.round_timer_area {
+margin-top: 7.5vw;
+}
+/*Round Timer Area Ends*/
